@@ -1,4 +1,4 @@
-Implementation of RADFed from paper [Aggregation Delayed Federated Learning](https://arxiv.org/abs/2108.07433)
+Implementation of RADFed in paper Aggregation Delayed Federated Learning
 
 ## Datasets
 
