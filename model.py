@@ -16,11 +16,12 @@ import random
 from language_utils import letter_to_vec, word_to_indices
 
 try:
+	sys.path.append('mobilenets')
 	import mobilenet_v2
 except:
 	print('not importing mobilenet_v2')
 
-pretrained_mobilenet_path='mobilenet_checkpoints/mobilenet_v2_1.0_224/mobilenet_v2_1.0_224.ckpt'
+pretrained_mobilenet_path='mobilenet_checkpoints/mobilenet_v2_1.0_224.ckpt'
 
 class LogisticRegression(object):
 	def __init__(self, learning_rate, feature_size, num_classes):
