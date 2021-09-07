@@ -12,7 +12,7 @@ def arg_parser():
 		help='Tensorflow graph level seed.')
 	parser.add_argument(
 		'--seed', 
-		default=1234, 
+		default=1, 
 		type=int,
 		help='Numpy seed.')
 	parser.add_argument(
