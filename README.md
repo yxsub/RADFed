@@ -13,7 +13,8 @@ Requirements
 - Ray=0.6.4
 - Tensorflow=1.14.0
 - PyTorch=1.4.0
-- cvxopt
+- cvxopt (only needed for data generation)
+- gurobipy (only needed for data generation)
 
 Experiments were performed on Linux with GeForce RTX 2080 Ti (11GB).
 
