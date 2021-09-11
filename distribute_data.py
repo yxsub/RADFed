@@ -2,6 +2,7 @@ from dataloader import Data_loader
 from arg_parser import arg_parser
 from utils import *
 import numpy as np
+import pandas as pd
 from sklearn.model_selection import KFold
 import math
 import os
@@ -403,7 +404,7 @@ def dirichlet_distribute_data_feature_class(mu, lambda_t, theta_t, class_sizes=n
 			fjt = [np.random.dirichlet(np.repeat(theta_t, d_j),T) for d_j in bucket_sizes[:-1]]
 			break
 
-	nN = round_samples_of_clients(nN_raw, N, n)
+	nN = round_samples_of_clients()
 	a_star_classes = lt * np.repeat(nN,K).reshape(T,K)
 
 	a_star_buckets = [np.empty([T,b]) for b in bucket_sizes[:-1]]
